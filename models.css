@@ -1,0 +1,99 @@
+:root {
+    --accent: #0b5ed7;
+    --dark: #111827;
+    --muted: #6b7280;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: system-ui, "Noto Sans Arabic", sans-serif;
+    background: #f8fafc;
+    color: var(--dark);
+  }
+
+  header {
+    background: white;
+    padding: 16px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--accent), #0b84ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  nav a {
+    text-decoration: none;
+    margin-left: 14px;
+    color: var(--dark);
+    font-weight: 600;
+  }
+  nav a.active {
+    color: var(--accent);
+  }
+
+  h1 {
+    margin: 24px;
+    font-size: 28px;
+  }
+
+  /* سيارات */
+  .cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+    padding: 22px;
+  }
+  .car-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  }
+  .car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .car-info {
+    padding: 14px;
+  }
+  .car-info h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+  }
+  .car-info p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .car-card a {
+    display: block;
+    text-align: center;
+    background: var(--accent);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 22px;
+    }
+  }
